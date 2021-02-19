@@ -1,0 +1,534 @@
+header{
+    position: relative;
+    background: linear-gradient(to right,#FAC028, #FED130,#FFD640,#FFD855);
+    .header-grid{
+        grid-template-columns: 1fr;
+        @media(min-width: $tablet){
+            grid-template-columns: 1fr 1fr;
+        }
+        grid-template-rows: auto;
+    }
+    .logo{
+        padding-top: 6rem;
+        @media(min-width: $tablet){
+            width: 40%;
+            grid-column: 1 / span 2;
+        }
+        @media(min-width: $desktop){
+            width: 40%;
+            
+        }      
+    }
+    h1{
+        font-family: 'centra-bold';
+        font-weight: 700;
+        font-size: 2.2rem;
+        line-height: 3.3rem;
+        padding-top: 7.5rem;
+        color: $redcolor;
+        @media(min-width: $tablet){
+           
+        }
+        @media(min-width: $desktop){
+            padding-top: 12rem;
+            font-size: 3.1rem;
+            line-height: 4rem;
+        }
+    }
+    h3{
+        font-family: 'centra-book';
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        padding: 1.6rem 0 2.4rem;
+        width: 80%;
+        @media(min-width: $tablet){
+            
+        }
+        @media(min-width: $desktop){
+            width: 66%;
+            padding:3rem 0 5rem;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+        }
+    }
+    .hero_link{
+        position: relative;
+        z-index: 1;
+        text-decoration: none;
+        font-family: 'centra-book';
+        font-weight: 400;
+        font-size: 2rem;
+        color:#E7E7E7;
+        padding:1.5rem 6rem; 
+        background-color: $redcolor;
+        border-radius: 1rem;
+        transition: opacity 0.3s ease;
+        opacity: 1;
+        @media(min-width: $tablet){
+            
+        }
+        @media(min-width: $desktop){
+            padding:1.5rem 6rem; 
+        }
+        &:active{
+            opacity: 0.8;
+            box-shadow: inset 0 0 0.5rem #000000;
+        }
+        &:hover{
+            padding:1.4rem 5.9rem; 
+            opacity: 0.9;
+        }
+    }
+    .hero-image{
+        img{
+            scale:1.4;
+            position: relative;
+            top:15%;
+            left:-5%;
+            
+            @media(min-width: $tablet){
+                padding-bottom: 5rem;
+            }
+            @media(min-width: $desktop){
+                position: static;
+                scale:none;
+                padding: 0;
+            }
+        }
+    }
+    
+  
+    &:after{
+        content:"";
+        position: absolute;
+        background-image: url(../images/before750.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        height: 6.9rem;
+        width: 100%;
+        bottom:-0.1rem;
+        @media(min-width: 715px){
+            height: 11rem;
+            background-image: url(../images/before1200.png);
+        }
+        @media(min-width: $desktop){
+            height: 17.6rem;
+            background-image: url(../images/before1920.png);
+        }
+        @media(min-width: 1900px){
+            height: 22.9rem;
+            background-image: url(../images/before2500.png);
+        }
+    }
+}
+
+.nav{
+    padding:15rem 0 17rem;
+    width: 100%;
+    @media(min-width: $tablet){
+        width: 72rem;
+    }
+    @media(min-width: $desktop){
+        padding: 15rem 0;
+        width: 117rem;
+    }
+    h2{
+        font-family: 'centra-bold';
+        font-weight: 700;
+        font-size: 2.9rem;
+        line-height: 3.8rem;
+        text-align: center;
+        color: #E7E7E7;
+        padding-bottom: 7.2rem;
+        @media(min-width: $tablet){
+            
+        }
+        @media(min-width: $desktop){
+            font-size: 3.2rem;
+            padding-bottom: 6rem;
+        }
+    }
+    .grid-nav{
+        width: 100%;
+        margin:0 auto;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 1.5rem;
+        grid-template-areas:"nav1 nav2" 
+                            "nav3 nav4";
+        @media(min-width: $tablet){
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas:"nav1 nav2 nav3 nav4";
+        }
+        @media(min-width: $desktop){
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-areas:". nav1 nav2 nav3 nav4 .";
+        }
+
+        a{
+            margin: 0 1rem;
+           img{
+               margin: 0 auto;
+           }
+        }
+        .func{
+            
+            border-radius: 1rem;
+            background-color: white;
+            transition: background-color 0.3s ease;
+            &:hover{
+                background-color: $yellowcolor;
+                cursor: pointer;
+            }
+            &:active{
+                background-color: $yellowcolor;
+                box-shadow: inset 0 0 0.5rem #000000;
+            }
+            &:not(:active){
+                box-shadow: 0 0 #000000;
+            }
+        }
+    }
+}
+.nav1{
+    grid-area: nav1;
+}
+.nav2{
+    grid-area: nav2;
+}
+.nav3{
+    grid-area: nav3;
+}
+.nav4{
+    grid-area: nav4;
+}
+
+.bg_wrap{
+    position: relative;
+    background-color: $redcolor;
+    &:nth-child(even){
+        background-color: white;
+    }
+    &:nth-child(odd) .card{
+        h2{
+            color: #E7E7E7;
+        }
+        .desc{
+            p{
+                color: #E7E7E7;
+            }
+            figcaption{
+                color: #E7E7E7;
+            }
+        }
+        .container_movie{
+            order:3;
+            @media(min-width: $tablet){
+                order:unset;
+            }
+        }
+        
+    }
+    &:nth-child(even) .card{
+        padding-bottom: 10rem;
+        @media(min-width: $tablet){
+            padding-bottom: 15rem;
+        }
+        @media(min-width: $desktop){
+            padding-bottom: 20rem;
+        }
+        h2{
+            padding-top: 8rem;
+            @media(min-width: $tablet){
+                padding-top: 10rem;
+            }
+            @media(min-width: $desktop){
+                padding-top: 15rem;
+            }
+        }
+        p{
+            
+        }
+    }
+    &:nth-child(even)::after{
+        content:"";
+        position: absolute;
+        background-image: url(../images/before750.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        height: 6.9rem;
+        width: 100%;
+        bottom:-0.1rem;
+        @media(min-width: 715px){
+            height: 11rem;
+            background-image: url(../images/before1200.png);
+        }
+        @media(min-width: $desktop){
+            height: 17.6rem;
+            background-image: url(../images/before1920.png);
+        }
+        @media(min-width: 1900px){
+            height: 22.9rem;
+            background-image: url(../images/before2500.png);
+        }
+    }
+    &:nth-child(even)::before{
+        content:"";
+        position: absolute;
+        background-image: url(../images/after750.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: top;
+        height: 6.9rem;
+        width: 100%;
+        @media(min-width: 715px){
+            height: 11rem;
+            background-image: url(../images//after1200.png);
+        }
+        @media(min-width: $desktop){
+            height: 17.6rem;
+            background-image: url(../images//after1920.png);
+        }
+        @media(min-width: 1900px){
+            height: 22.9rem;
+            background-image: url(../images//after2500.png);
+        }
+    }
+    &:last-child .card{
+        padding-bottom: 5rem;
+        @media(min-width: $tablet){
+            padding-bottom: 10rem;
+        }
+        @media(min-width: $desktop){
+            padding-bottom: 20rem;
+        }
+    }
+}
+
+.container_movie{
+    position: relative;
+    //background-image: url(../images/moviec.png);
+}
+
+
+.card{
+    grid-template-columns: 1fr;
+    @media(min-width: $tablet){
+        grid-template-columns: 1fr 1fr;
+    }
+    grid-template-rows: auto;
+    
+    padding-bottom: 4rem;
+    @media(min-width: $tablet){
+        padding-bottom: 6rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    @media(min-width: $desktop){
+        padding-bottom: 8rem;
+    }
+    h2{
+        font-family: 'centra-book';
+        font-weight: 400;
+        font-size: 4rem;
+        text-align: center;
+        color: $redcolor;
+        padding:4rem 0 6rem;
+        @media(min-width: 375px){
+            font-size: 4.5rem;
+        }
+        @media(min-width: $tablet){
+            grid-column: 1 / span 2;
+        }
+        @media(min-width: $desktop){
+            padding:4rem 0 6rem;
+            font-size: 6rem;
+        }
+        
+    }
+    .desc_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .desc{
+        width: 90%;
+        @media(min-width: $tablet){
+            
+        }
+        @media(min-width: $desktop){
+            width: 70%;
+        }
+        p{
+            font-family: 'centra-book';
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            text-align: left;
+            color: black;
+            padding-bottom: 7rem;
+            @media(min-width: $tablet){
+                
+            }
+            @media(min-width: $desktop){
+                font-size: 2rem;
+                line-height: 2.4rem;
+                padding-bottom: 6rem;
+            }
+        }
+        .double_img{
+            justify-content: center;
+            padding-bottom: 2rem;
+            @media(min-width: $tablet){
+                
+            }
+            @media(min-width: $desktop){
+                justify-content: start;
+                padding: 0;
+            }
+            figure{
+                figcaption{
+                    font-family: 'centra-book';
+                    font-weight: 400;
+                    font-size: 1.4rem;
+                    text-align: center;
+                    @media(min-width: $tablet){
+                
+                    }
+                    @media(min-width: $desktop){
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+    }
+    .container_movie{
+        display: flex;
+        justify-content: center;
+        height: auto;
+        position: relative;
+        z-index: 0;
+        img{
+            position: relative;
+            z-index: 2;
+            pointer-events: none;
+        }
+        video{
+            position: absolute;
+            z-index: 1;
+            height: 49rem;
+            top:2.5rem;
+            cursor: pointer;
+        }
+    }
+    
+}
+
+footer{
+    position: relative;
+    
+    .grid-footer{
+        padding: 20rem 0 15rem;
+        width: 100%;
+        margin:0 auto;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10rem;
+        a{
+            text-decoration: none;
+            &:hover p{
+                color:black;
+            }
+        }
+        
+        @media(min-width: $tablet){
+            grid-template-columns: repeat(4, 1fr);
+            
+        }
+        @media(min-width: $desktop){
+            width: 50%;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 30rem 0 15rem;
+        }
+        .icoft{
+            margin:0 auto;
+            padding-bottom: 1rem;
+            
+        }
+        p{
+            text-align: center;
+            font-family: 'centra-book';
+            font-weight: 400;
+            font-size: 1.6rem;
+            color: #7f7f7f;
+         }
+    }
+
+    &:before{
+        content:"";
+        position: absolute;
+        background-image: url(../images/after750.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: top;
+        height: 6.9rem;
+        width: 100%;
+        top:0;
+        @media(min-width: 715px){
+            height: 11rem;
+            background-image: url(../images/after1200.png);
+        }
+        @media(min-width: $desktop){
+            height: 17.6rem;
+            background-image: url(../images/after1920.png);
+        }
+        @media(min-width: 1900px){
+            height: 22.9rem;
+            background-image: url(../images/after2500.png);
+        }
+    }
+    .copy{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #A7A7A6;
+        background-color: #F2F0EA;
+        height: 4.5rem;
+        text-align: center;
+        font-family: 'centra-book';
+        font-weight: 400;
+        font-size: 1.3rem;
+    }
+}
+#scroll{
+    display: none; 
+    position: fixed;
+    bottom: 30rem;
+    right: 0.5rem;
+    z-index: 99;
+    transition: scale 0.3 ease;
+    @media(min-width: $tablet){
+        right:2rem;
+    }
+    @media(min-width: $desktop){
+        right: 3rem;
+    }
+    @media(min-width: 1900px){
+        right: 10rem;
+    }
+    img{
+        cursor: pointer;
+        &:hover{
+            scale:1.2;
+        }
+    }
+}
+
+
+
+/*
+-webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+*/

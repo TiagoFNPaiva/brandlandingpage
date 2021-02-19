@@ -1,0 +1,67 @@
+//Font Centra
+
+@font-face {
+    font-display: swap;
+    font-family: 'centra-light';
+    font-weight: 100;
+    src:url('../css/fonts/centra/centra-light.woff2') format('woff2'),
+        url('../css/fonts/centra/centra-light.woff') format('woff'),
+        url('../css/fonts/centra/centra-light.ttf') format('truetype');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'centra-medium';
+    font-weight: 500;
+    src:url('../css/fonts/centra/centra-medium.woff2') format('woff2'),
+        url('../css/fonts/centra/centra-medium.woff') format('woff'),
+        url('../css/fonts/centra/centra-medium.ttf') format('truetype');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'centra-book';
+    font-weight: 400;
+    src:url('../css/fonts/centra/centra-book.woff2') format('woff2'),
+        url('../css/fonts/centra/centra-book.woff') format('woff'),
+        url('../css/fonts/centra/centra-book.ttf') format('truetype');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'centra-bold';
+    font-weight: 700;
+    src:url('../css/fonts/centra/centra-bold.woff2') format('woff2'),
+        url('../css/fonts/centra/centra-bold.woff') format('woff'),
+        url('../css/fonts/centra/centra-bold.ttf') format('truetype');
+}
+
+
+//Font Newzald
+
+@font-face {
+    font-display: swap;
+    font-family: 'newzald-black';
+    font-weight: 900;
+    src:url('../css/fonts/newzald/newzald-black-italic.woff2') format('woff2'),
+        url('../css/fonts/newzald/newzald-black-italic.woff') format('woff'),
+        url('../css/fonts/newzald/newzald-black-italic.ttf') format('truetype'),
+        url('../css/fonts/newzald/newzald-black-italic.otf') format("opentype");
+}
+@font-face {
+    font-display: swap;
+    font-family: 'newzald-bold';
+    font-weight: 700;
+    src:url('../css/fonts/newzald/newzald-bold.woff2') format('woff2'),
+        url('../css/fonts/newzald/newzald-bold.woff') format('woff'),
+        url('../css/fonts/newzald/newzald-bold.ttf') format('truetype'),
+        url('../css/fonts/newzald/newzald-bold.otf') format("opentype");
+}
+@font-face {
+    font-display: swap;
+    font-family: 'newzald-book';
+    font-weight: 400;
+    src:url('../css/fonts/newzald/newzald-book.woff2') format('woff2'),
+        url('../css/fonts/newzald/newzald-book.woff') format('woff'),
+        url('../css/fonts/newzald/newzald-book.ttf') format('truetype'),
+        url('../css/fonts/newzald/newzald-book.otf') format("opentype");
+}
+
+

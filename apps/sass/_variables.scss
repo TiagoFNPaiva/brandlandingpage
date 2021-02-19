@@ -1,0 +1,26 @@
+//Colors
+
+$redcolor:#ED282D; //RGB: 237, 40, 45
+$graycolor:#E8E6DA; //RGB: 232, 230, 218
+$yellowcolor:#FAD33C; //RGB: 250, 211, 60
+$bluecolor:#CEE9E5; //RGB: 206, 233, 229
+
+//Sizes
+$tablet: 750px;
+
+$desktop: 1200px;
+
+$gridcolumns: 12;
+$gridgutter: 30px;
+
+$gridwidth: 90%;
+$gridwidtht: $tablet - $gridgutter;
+$gridwidthd: $desktop - $gridgutter;
+
+
+
+$animationtime: 0.4s;
+
+
+
+
