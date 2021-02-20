@@ -81,16 +81,16 @@ const hide = () => {
     if (document.body.scrollTop >= (isInViewport(aWrap) * 0.8) || document.documentElement.scrollTop >= (isInViewport(aWrap)) * 0.8) {
         btn.style.display = "block";
         if (document.body.scrollTop >= (isInViewport(bWrap) * 0.6) || document.documentElement.scrollTop >= (isInViewport(bWrap)) * 0.6) {
-            bup.style.display = "block";
+            bup.style.visibility = "unset";
         }
         else {
-            bup.style.display = "none";
+            bup.style.visibility = "hidden";
         }
         if (document.body.scrollTop >= (isInViewport(dWrap) * 1) || document.documentElement.scrollTop >= (isInViewport(dWrap)) * 1) {
-            bdown.style.display = "none";
+            bdown.style.visibility = "hidden";
         }
         else {
-            bdown.style.display = "block";
+            bdown.style.visibility = "unset";
         }
 
     } else {
