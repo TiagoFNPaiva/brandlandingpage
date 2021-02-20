@@ -28,13 +28,16 @@ const cWrap = document.getElementsByClassName("bg_wrap")[3];
 const dWrap = document.getElementsByClassName("bg_wrap")[4];
 
 const btn = document.getElementById("scroll");
+const bhome = document.getElementsByClassName("scrollnav")[0];
+const bup = document.getElementsByClassName("scrollup")[0];
+const bdown = document.getElementsByClassName("scrolldown")[0];
 
 
 
-//aCard.scrollIntoView();
+
 
 const scrollUp = () => {
-    const currentP = window.scrollY;
+    const currentP = Math.round(window.scrollY) - 5;
     if (isInViewport(aWrap) >= currentP) {
         return;
     }
@@ -44,8 +47,11 @@ const scrollUp = () => {
     else if (isInViewport(cWrap) >= currentP) {
         bCard.scrollIntoView();
     }
-    else {
+    else if (isInViewport(dWrap) >= currentP) {
         cCard.scrollIntoView();
+    }
+    else {
+        dCard.scrollIntoView();
     }
 }
 function isInViewport(el) {
@@ -53,7 +59,7 @@ function isInViewport(el) {
     return (Math.round(rect.top + window.scrollY));
 }
 const scrollDown = () => {
-    const currentP = Math.round(window.scrollY);
+    const currentP = Math.round(window.scrollY) + 5;
     if (isInViewport(dWrap) <= currentP) {
         return;
     }
@@ -66,11 +72,27 @@ const scrollDown = () => {
     else if (isInViewport(aWrap) <= currentP) {
         bCard.scrollIntoView();
     }
+    else if (isInViewport(aWrap) > currentP) {
+        aCard.scrollIntoView();
+    }
 }
 
 const hide = () => {
-    if (document.body.scrollTop >= isInViewport(aWrap) || document.documentElement.scrollTop >= isInViewport(aWrap)) {
+    if (document.body.scrollTop >= (isInViewport(aWrap) * 0.8) || document.documentElement.scrollTop >= (isInViewport(aWrap)) * 0.8) {
         btn.style.display = "block";
+        if (document.body.scrollTop >= (isInViewport(bWrap) * 0.6) || document.documentElement.scrollTop >= (isInViewport(bWrap)) * 0.6) {
+            bup.style.display = "block";
+        }
+        else {
+            bup.style.display = "none";
+        }
+        if (document.body.scrollTop >= (isInViewport(dWrap) * 1) || document.documentElement.scrollTop >= (isInViewport(dWrap)) * 1) {
+            bdown.style.display = "none";
+        }
+        else {
+            bdown.style.display = "block";
+        }
+
     } else {
         btn.style.display = "none";
     }
@@ -78,38 +100,6 @@ const hide = () => {
 
 
 /*
-
-document.addEventListener('scroll', function () {
-        animateCard();
-    })
-
-function isInViewport2(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.bottom - 250 <= (window.innerHeight || document.documentElement.clientHeight)
-    );
-}
-
-const animateCard = () => {
-    if (isInViewport(aCard)) {
-        aCard.classList.add("animate");
-        document.getElementsByClassName("pa1")[0].classList.add("animate");
-    }
-    if (isInViewport2(bCard)) {
-        bCard.classList.add("animate")
-        document.getElementsByClassName("pa2")[0].classList.add("animate");
-    }
-    if (isInViewport(cCard)) {
-        cCard.classList.add("animate")
-        document.getElementsByClassName("pa3")[0].classList.add("animate");
-    }
-    if (isInViewport2(dCard)) {
-        dCard.classList.add("animate")
-        document.getElementsByClassName("pa4")[0].classList.add("animate");
-    }
-}
-
 
 const play = () => {
     const html = document.getElementsByClassName("pa1")[0].innerHTML

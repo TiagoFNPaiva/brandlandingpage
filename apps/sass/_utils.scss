@@ -1,10 +1,3 @@
-.animate{
-    -webkit-transition: all $animationtime ease;
-    -moz-transition: all $animationtime ease;
-    -ms-transition: all $animationtime ease;
-    -o-transition: all $animationtime ease;
-    transition: all $animationtime ease;
-}
 .flex{
     display: flex;
 }
@@ -17,39 +10,6 @@
     }
     @media(min-width: $desktop){
         width: $gridwidthd;
-    }
-}
-/* ================================== */
-/* ======= MARGINS / PADDINGS ======= */
-/* ================================== */
-$sizes: (
-    'none': 0,
-    'fourth': $gridgutter / 4, 
-    'third': $gridgutter / 3, 
-    'half': $gridgutter / 2, 
-    'twothirds': $gridgutter / 3 * 2, 
-    'full': $gridgutter, 
-    'oneandhalf': $gridgutter * 1.5, 
-    'double': $gridgutter * 2
-);
-@each $name, $size in $sizes {
-    @each $mode in margin, padding {
-        .#{$mode}#{$name} {
-            #{$mode}: $size !important;
-        }
-        .#{$mode}horizontal#{$name} {
-            #{$mode}-left: $size !important;
-            #{$mode}-right: $size !important;
-        }
-        .#{$mode}vertical#{$name} {
-            #{$mode}-top: $size !important;
-            #{$mode}-bottom: $size !important;
-        }
-        @each $side in top, right, bottom, left {
-            .#{$mode}#{$side}#{$name} {
-                #{$mode}-#{$side}: $size !important;
-            }
-        }
     }
 }
 
