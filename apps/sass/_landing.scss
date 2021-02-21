@@ -56,7 +56,7 @@ header{
         padding:1.5rem 6rem; 
         background-color: $redcolor;
         border-radius: 1rem;
-        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        
         transition: opacity 0.3s ease;
         opacity: 1;
         @media(min-width: $desktop){
@@ -160,7 +160,7 @@ header{
            }
         }
         .func{
-            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            
             border-radius: 1rem;
             background-color: white;
             transition: background-color 0.3s ease;
@@ -376,10 +376,10 @@ header{
             position: relative;
             z-index: 2;
             pointer-events: none;
-            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            
         }
         video{
-            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            
             position: absolute;
             z-index: 1;
             height: 49rem;
@@ -400,7 +400,6 @@ footer{
         grid-template-columns: repeat(2, 1fr);
         row-gap: 10rem;
         a{
-            -webkit-tap-highlight-color: rgba(0,0,0,0);
             text-decoration: none;
             &:hover p{
                 color:black;
@@ -483,8 +482,7 @@ footer{
     @media(min-width: 1900px){
         right: 10rem;
     }
-    img{
-        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    img{      
         cursor: pointer;
         &:hover{
             scale:1.2;
