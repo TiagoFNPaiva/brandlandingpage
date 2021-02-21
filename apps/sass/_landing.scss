@@ -528,25 +528,26 @@ footer{
 
 .app_img{
     width: 80%;
-    margin: 10rem auto 3rem;
+    margin: 7.5rem auto 3rem;
     @media(min-width: $tablet){
         width: auto;
-        margin: 9rem auto 3rem;
+        margin: 6rem auto 3rem;
     }
 }
 .app_h1{
-    width: 50%;
+    width: 90%;
     margin: 0 auto;
     font-family: 'centra-book';
     font-weight: 400;
     font-size: 1.8rem;
-    line-height: 2.4rem;
+    line-height: 2.2rem;
     text-align: center;
     color: $redcolor;
     padding-bottom: 5rem;
     @media(min-width: $tablet){
+        width: 50%;
         font-size: 2.5rem;
-    line-height: 3.3rem;
+        line-height: 3.3rem;
     }
 }
 .app_link_cont{
