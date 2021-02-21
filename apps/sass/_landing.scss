@@ -92,7 +92,7 @@ header{
     &:after{
         content:"";
         position: absolute;
-        background-image: url(../images/before750.png);
+        background-image: url(../images/webp/before750.webp);
         background-size: contain;
         background-repeat: no-repeat;
         background-position-y: bottom;
@@ -101,15 +101,15 @@ header{
         bottom:-0.1rem;
         @media(min-width: 715px){
             height: 11rem;
-            background-image: url(../images/before1200.png);
+            background-image: url(../images/webp/before1200.webp);
         }
         @media(min-width: $desktop){
             height: 17.6rem;
-            background-image: url(../images/before1920.png);
+            background-image: url(../images/webp/before1920.webp);
         }
         @media(min-width: 1900px){
             height: 22.9rem;
-            background-image: url(../images/before2500.png);
+            background-image: url(../images/webp/before2500.webp);
         }
     }
 }
@@ -238,7 +238,7 @@ header{
     &:nth-child(even)::after{
         content:"";
         position: absolute;
-        background-image: url(../images/before750.png);
+        background-image: url(../images/webp/before750.webp);
         background-size: contain;
         background-repeat: no-repeat;
         background-position-y: bottom;
@@ -247,21 +247,21 @@ header{
         bottom:-0.1rem;
         @media(min-width: 715px){
             height: 11rem;
-            background-image: url(../images/before1200.png);
+            background-image: url(../images/webp/before1200.webp);
         }
         @media(min-width: $desktop){
             height: 17.6rem;
-            background-image: url(../images/before1920.png);
+            background-image: url(../images/webp/before1920.webp);
         }
         @media(min-width: 1900px){
             height: 22.9rem;
-            background-image: url(../images/before2500.png);
+            background-image: url(../images/webp/before2500.webp);
         }
     }
     &:nth-child(even)::before{
         content:"";
         position: absolute;
-        background-image: url(../images/after750.png);
+        background-image: url(../images/webp/after750.webp);
         background-size: contain;
         background-repeat: no-repeat;
         background-position-y: top;
@@ -269,15 +269,15 @@ header{
         width: 100%;
         @media(min-width: 715px){
             height: 11rem;
-            background-image: url(../images//after1200.png);
+            background-image: url(../images/webp/after1200.webp);
         }
         @media(min-width: $desktop){
             height: 17.6rem;
-            background-image: url(../images//after1920.png);
+            background-image: url(../images/webp/after1920.webp);
         }
         @media(min-width: 1900px){
             height: 22.9rem;
-            background-image: url(../images//after2500.png);
+            background-image: url(../images/webp/after2500.webp);
         }
     }
     &:last-child .card{
@@ -432,7 +432,7 @@ footer{
     &:before{
         content:"";
         position: absolute;
-        background-image: url(../images/after750.png);
+        background-image: url(../images/webp/after750.webp);
         background-size: contain;
         background-repeat: no-repeat;
         background-position-y: top;
@@ -441,15 +441,15 @@ footer{
         top:0;
         @media(min-width: 715px){
             height: 11rem;
-            background-image: url(../images/after1200.png);
+            background-image: url(../images/webp/after1200.webp);
         }
         @media(min-width: $desktop){
             height: 17.6rem;
-            background-image: url(../images/after1920.png);
+            background-image: url(../images/webp/after1920.webp);
         }
         @media(min-width: 1900px){
             height: 22.9rem;
-            background-image: url(../images/after2500.png);
+            background-image: url(../images/webp/after2500.webp);
         }
     }
     .copy{
