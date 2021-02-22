@@ -218,22 +218,17 @@ header{
         
     }
     &:nth-child(even) .card{
-        padding-bottom: 10rem;
+        padding: 4rem 0 10rem;
         @media(min-width: $tablet){
-            padding-bottom: 15rem;
+            padding: 6rem 0 15rem;
         }
         @media(min-width: $desktop){
-            padding-bottom: 20rem;
+            padding: 11rem 0 20rem;
         }
-        h2{
-            padding-top: 8rem;
-            @media(min-width: $tablet){
-                padding-top: 10rem;
-            }
-            @media(min-width: $desktop){
-                padding-top: 15rem;
-            }
+        @media(min-width: 1900px){
+            padding: 15rem 0 22rem;
         }
+       
     }
     &:nth-child(even)::after{
         content:"";
@@ -278,15 +273,6 @@ header{
         @media(min-width: 1900px){
             height: 22.9rem;
             background-image: url(../images/webp/after2500.webp);
-        }
-    }
-    &:last-child .card{
-        padding-bottom: 5rem;
-        @media(min-width: $tablet){
-            padding-bottom: 10rem;
-        }
-        @media(min-width: $desktop){
-            padding-bottom: 20rem;
         }
     }
 }
@@ -413,7 +399,6 @@ footer{
         @media(min-width: $desktop){
             width: 50%;
             grid-template-columns: repeat(4, 1fr);
-            padding: 30rem 0 15rem;
         }
         .icoft{
             margin:0 auto;
