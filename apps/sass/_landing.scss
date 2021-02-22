@@ -102,6 +102,7 @@ header{
         height: 6.9rem;
         width: 100%;
         bottom:-0.1rem;
+        right:0;
         @media(min-width: 715px){
             height: 11rem;
             background-image: url(../images/png/before1200.png);
@@ -247,6 +248,7 @@ header{
         height: 6.9rem;
         width: 100%;
         bottom:-0.1rem;
+        right:0;
         @media(min-width: 715px){
             height: 11rem;
             background-image: url(../images/png/before1200.png);
@@ -269,6 +271,7 @@ header{
         background-position-y: top;
         height: 6.9rem;
         width: 100%;
+        right:0;
         @media(min-width: 715px){
             height: 11rem;
             background-image: url(../images/png/after1200.png);
@@ -377,6 +380,7 @@ header{
             z-index: 1;
             height: 49rem;
             top:2.5rem;
+            right:0;
             cursor: pointer;
         }
     }
@@ -437,6 +441,7 @@ footer{
         height: 6.9rem;
         width: 100%;
         top:0;
+        right:0;
         z-index: -1;
         @media(min-width: 715px){
             height: 11rem;
