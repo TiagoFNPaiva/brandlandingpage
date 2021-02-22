@@ -380,13 +380,19 @@ footer{
     position: relative;
     
     .grid-footer{
-        padding: 20rem 0 15rem;
+        padding: 16rem 0 15rem;
         width: 100%;
         margin:0 auto;
         grid-template-columns: repeat(2, 1fr);
         row-gap: 10rem;
+        @media(min-width: $desktop){
+            padding: 18rem 0 13rem;
+         }
         a{
             text-decoration: none;
+            @media(min-width: $desktop){
+               padding: 2rem 0;
+            }
             &:hover p{
                 color:black;
             }
@@ -424,6 +430,7 @@ footer{
         height: 6.9rem;
         width: 100%;
         top:0;
+        z-index: -1;
         @media(min-width: 715px){
             height: 11rem;
             background-image: url(../images/webp/after1200.webp);
