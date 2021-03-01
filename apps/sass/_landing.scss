@@ -368,11 +368,9 @@ header{
         img{
             position: relative;
             z-index: 2;
-            pointer-events: none;
-            
+            pointer-events: none;     
         }
         video{
-            
             position: absolute;
             z-index: 1;
             height: 49rem;
@@ -558,17 +556,3 @@ footer{
         opacity: 0.9;
     }
 }
-
-
-
-
-
-
-
-/*
-  -webkit-transition: all $animationtime ease;
-    -moz-transition: all $animationtime ease;
-    -ms-transition: all $animationtime ease;
-    -o-transition: all $animationtime ease;
-    transition: all $animationtime ease;
-*/
